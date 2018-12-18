@@ -1,11 +1,16 @@
+
+### HELLO THIS IS MY SILLY COMMENT 
+import numpy as np
+
 print('What is the radius of the star your planet is orbiting')
 starRadius = input()
 #print('What is the set of points you are using; your data?')
-Points = input()
-#points = [[1,2],
- #         [2,1],
-  #        [3,4]]
-points = (Points.strip('[]').split(',')) 
+#Points = input()
+points = np.array([[1,2], [2,1],[3,4]])
+
+minstorenumber = np.min(points)
+maxstorenumber = np.max(points)
+
 for index in range(len(points)):
     print(points[index][1])
     #first time store number
