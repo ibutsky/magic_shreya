@@ -24,7 +24,7 @@ for index in range(len(points)):
         maxstorenumber = points[index][1]
     #if current < past then keep past
     #if current = past then keep current
-
+sqNumber = maxstorenumber - minstoremumber
 
 print('This is your maximum y-value from your points, ' + str(maxstorenumber) + ' .')
 #    prevnumber = points[index][]
