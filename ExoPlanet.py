@@ -1,6 +1,7 @@
 
 ### HELLO THIS IS MY SILLY COMMENT 
 ### I can edit now
+import math
 
 import numpy as np
 
@@ -8,7 +9,7 @@ print('What is the radius of the star your planet is orbiting')
 starRadius = input()
 #print('What is the set of points you are using; your data?')
 #Points = input()
-points = np.array([[1,2], [2,1],[3,4]])
+points = np.array([[1,2], [2,4],[3,1]])
 
 minstorenumber = np.min(points)
 maxstorenumber = np.max(points)
@@ -26,9 +27,10 @@ for index in range(len(points)):
     #if current = past then keep current
 print('This is your maximum y-value from your points, ' + str(maxstorenumber) + ' .')
     
+#doing square root of min-max--> exoplanet radius
 sqNumber = maxstorenumber - minstoremumber
-exoRadiuspre = sqrt(sqNumber)
-exoRadius = exoRadiuspre * starRadius
+exoRadiuspre = math.sqrt(sqNumber)
+exoRadius = int(exoRadiuspre) * int(starRadius)
 print('The radius of your planet is ' + str(exoRadius) + '.')
 
 #    prevnumber = points[index][]
