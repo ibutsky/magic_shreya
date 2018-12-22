@@ -24,9 +24,13 @@ for index in range(len(points)):
         maxstorenumber = points[index][1]
     #if current < past then keep past
     #if current = past then keep current
-sqNumber = maxstorenumber - minstoremumber
-
 print('This is your maximum y-value from your points, ' + str(maxstorenumber) + ' .')
+    
+sqNumber = maxstorenumber - minstoremumber
+exoRadiuspre = sqrt(sqNumber)
+exoRadius = exoRadiuspre * starRadius
+print('The radius of your planet is ' + str(exoRadius) + '.')
+
 #    prevnumber = points[index][]
 #sqNumber = min(Points) - max(Points)
 #finStep = sqrt(sqNumber)
