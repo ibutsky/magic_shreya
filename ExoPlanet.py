@@ -1,6 +1,7 @@
 
 ### HELLO THIS IS MY SILLY COMMENT 
 ### I can edit now
+### Need to figure out how to take in imput of points
 import math
 
 import numpy as np
