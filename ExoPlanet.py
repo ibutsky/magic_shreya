@@ -1,8 +1,9 @@
 
 ### HELLO THIS IS MY SILLY COMMENT 
 ### I can edit now
-### Need to figure out how to take in imput of points
+### Need to figure out how to take in input of points
 import math
+
 import numpy as np
 
 print('What is the radius of the star your planet is orbiting')
@@ -10,13 +11,6 @@ starRadius = input()
 #print('What is the set of points you are using; your data?')
 #Points = input()
 points = np.array([[1,2], [2,4],[3,1]])
-
-#starRadius = float(sys.argv[1])
-print('What is the filename of your data')
-fn = input()
-
-time, flux = np.loadtxt(fn, unpack = True, skiprows =1)
-print(time, flux)
 
 minstorenumber = np.min(points)
 maxstorenumber = np.max(points)
