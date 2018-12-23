@@ -8,9 +8,10 @@ import numpy as np
 
 print('What is the radius of the star your planet is orbiting')
 starRadius = input()
-#print('What is the set of points you are using; your data?')
-#Points = input()
-points = np.array([[1,2], [2,4],[3,1]])
+print('What is the filename of your data')
+fn = input()
+time, flux = np.loadtxt(fn, unpack = True, skiprows =1)
+print(time, flux)
 
 minstorenumber = np.min(points)
 maxstorenumber = np.max(points)
